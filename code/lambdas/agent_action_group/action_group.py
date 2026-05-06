@@ -48,7 +48,7 @@ def lambda_handler(event, context):
             
             try:
                 response = bedrock_runtime.invoke_model(
-                    modelId="us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+                    modelId="us.anthropic.claude-sonnet-4-6",
                     body=json.dumps(request_body)
                 )
 
